@@ -1,4 +1,4 @@
-package br.com.oatsolutions.gof;
+package br.com.oatsolutions.gof.objectscope.creational;
 
 public class Singleton {
     /**
