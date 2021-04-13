@@ -1,4 +1,4 @@
-package br.com.oatsolutions.gof.objectscope.creational;
+package br.com.oatsolutions.gof.objectscope.creational.singleton;
 
 public class Singleton {
     /**
@@ -19,9 +19,7 @@ public class Singleton {
      * is called
      */
     public static Singleton getInstance() {
-        if (uniqueInstance == null) {
-            uniqueInstance = new Singleton();
-        }
+        if (uniqueInstance == null) uniqueInstance = new Singleton();
         return  uniqueInstance;
     }
 }
