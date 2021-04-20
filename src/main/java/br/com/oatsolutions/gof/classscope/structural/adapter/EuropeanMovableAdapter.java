@@ -8,7 +8,7 @@ package br.com.oatsolutions.gof.classscope.structural.adapter;
  * Copyright (c) 2021 OAT Solutions, OAT Solutions. All rights reserved.
  */
 public class EuropeanMovableAdapter implements MovableAdapter {
-    private Movable luxuryCars;
+    private final Movable luxuryCars;
 
     // standard constructors
 

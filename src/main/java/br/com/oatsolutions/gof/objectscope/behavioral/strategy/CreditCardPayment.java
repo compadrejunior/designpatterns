@@ -8,8 +8,8 @@ package br.com.oatsolutions.gof.objectscope.behavioral.strategy;
  * Copyright (c) 2021 OAT Solutions, OAT Solutions. All rights reserved.
  */
 public class CreditCardPayment implements Payment{
-    private String name;
-    private String cardNumber;
+    private final String name;
+    private final String cardNumber;
 
     public CreditCardPayment(String name, String cardNumber) {
         this.name = name;
@@ -20,4 +20,13 @@ public class CreditCardPayment implements Payment{
     public void pay(int amount) {
         System.out.println(amount + " paid with credit card.");
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getCardNumber() {
+        return cardNumber;
+    }
+
 }

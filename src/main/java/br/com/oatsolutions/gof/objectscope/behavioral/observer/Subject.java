@@ -8,8 +8,8 @@ package br.com.oatsolutions.gof.objectscope.behavioral.observer;
  * Copyright (c) 2021 OAT Solutions, OAT Solutions. All rights reserved.
  */
 public interface Subject {
-    public void register(Observer observer);
-    public void unregister(Observer observer);
-    public void notifyObservers();
-    public Object getUpdate();
+    void register(Observer observer);
+    void unregister(Observer observer);
+    void notifyObservers();
+    Object getUpdate();
 }

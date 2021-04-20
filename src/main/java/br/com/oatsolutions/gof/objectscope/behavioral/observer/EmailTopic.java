@@ -11,7 +11,7 @@ import java.util.List;
  * Copyright (c) 2021 OAT Solutions, OAT Solutions. All rights reserved.
  */
 public class EmailTopic implements Subject {
-    private List<Observer> observerList;
+    private final List<Observer> observerList;
     private String message;
 
     public EmailTopic() {

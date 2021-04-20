@@ -1,7 +1,6 @@
 package br.com.oatsolutions.gof.objectscope.behavioral.state;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 /**
@@ -15,7 +14,7 @@ public class Player {
     private State state;
     private boolean playing = false;
     private int volume = 0;
-    private List<Song> playlist = new ArrayList<>();
+    private final List<Song> playlist = new ArrayList<>();
     private int currentTrack;
 
     public Player() {
@@ -119,7 +118,7 @@ public class Player {
     }
 
     public Song getCurrentSong() {
-        return (Song) this.playlist.get(currentTrack);
+        return this.playlist.get(currentTrack);
     }
 
     public List<Song> getPlaylist() {

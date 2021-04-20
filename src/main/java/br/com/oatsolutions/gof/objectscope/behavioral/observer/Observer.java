@@ -8,6 +8,6 @@ package br.com.oatsolutions.gof.objectscope.behavioral.observer;
  * Copyright (c) 2021 OAT Solutions, OAT Solutions. All rights reserved.
  */
 public interface Observer {
-    public void update();
-    public void setSubject(Subject subject);
+    void update();
+    void setSubject(Subject subject);
 }

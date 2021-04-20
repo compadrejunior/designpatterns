@@ -8,7 +8,7 @@ package br.com.oatsolutions.gof.objectscope.behavioral.observer;
  * Copyright (c) 2021 OAT Solutions, OAT Solutions. All rights reserved.
  */
 public class EmailTopicSubscriber implements Observer {
-    private String name;
+    private final String name;
     private Subject topic;
 
     public EmailTopicSubscriber(String name) {

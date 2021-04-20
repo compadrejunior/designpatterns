@@ -8,7 +8,7 @@ package br.com.oatsolutions.gof.objectscope.behavioral.state;
  * Copyright (c) 2021 OAT Solutions, OAT Solutions. All rights reserved.
  */
 public class LockedState implements State {
-    private Player player;
+    private final Player player;
 
     public LockedState(Player player) {
         this.player = player;
