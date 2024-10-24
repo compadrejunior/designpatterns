@@ -17,7 +17,7 @@ public class StateTest {
         System.out.println("*** TEST 1 ***");
         Player player = new Player();
 
-        Song firstSong = new Song("Nine Syphonie", "Bethoven", null, 0 );
+        Song firstSong = new Song("Nine Symphonie", "Bethoven", null, 0 );
         player.addSong(firstSong);
         Song secondSong = new Song("Il Trovatore", "Giuseppe Verdi", null, 0 );
         player.addSong(secondSong);
